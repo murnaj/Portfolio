@@ -48,26 +48,26 @@
   margin-inline: auto;
 
   @variant sm {
-    padding-inline: 0.8rem;
+    padding-inline: 1rem;
   }
 
   @variant md {
-    padding-inline: 1.5rem;
+    padding-inline: 3rem;
     /* max-width: 750px; */
   }
 
   @variant lg {
-    padding-inline: 1.5rem;
+    padding-inline: 3rem;
     /* max-width: 1000px; */
   }
 
   @variant xl {
-    padding-inline: 2rem;
+    padding-inline: 4rem;
     /* max-width: 1200px; */
   }
 
   @variant 2xl {
-    padding-inline: 2rem;
+    padding-inline: 4rem;
     /* max-width: 1440px; */
   }
 }

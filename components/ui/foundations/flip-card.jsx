@@ -13,9 +13,12 @@ const FlipCard = () => {
                         </div>
                     ))}
                 </div>
+                </div>
                 <div className='h-[50px]'></div>
+                
+                <div className='container'>
                 <div className='w-full bg-[url(/cta_bg.jpeg)] py-[90px] gap-4 rounded-2xl'>
-                    <h2 className="font-semibold font-[family-name:var(--font-poppins)] text-center lg:text-[50px] text-[25px] lg:max-w-[1110px] mx-auto">
+                    <h2 className="text-[#fefefe]/200 font-bold font-[family-name:var(--font-poppins)] text-center lg:text-[50px] text-[25px] lg:max-w-[1110px] mx-auto">
                         Let's disscuse make something
                         <span>
                             <i className="lg:mx-3 mx-1">cool</i>
@@ -25,7 +28,7 @@ const FlipCard = () => {
                     <div className='h-[50px]'></div>
                     <div className='' >
                         <div className='flex justify-center items-center'>
-                            <a className='hover:underline hover:text-orange-700 lg:text-[16px] text-[12px]' href='/#'>
+                            <a className='hover:underline hover:text-orange-700 lg:text-[16px] text-[12px] text-[#FFFFFF] font-bold' href='/#'>
                                 Apply For Meeting
                             </a>
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -45,12 +48,13 @@ const FlipCard = () => {
 
                     </div>
                 </div>
+                </div>
 
                 <div className='h-[90px]'></div>
 
 
 
-            </div>
+            
         </div>
     )
 }

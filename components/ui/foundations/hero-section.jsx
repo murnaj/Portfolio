@@ -4,14 +4,12 @@ import React from 'react'
 const HeroSection = () => {
     return (
 
-        <div className="w-full bg-[url(/hero_bg.jpeg)] text-[#efefef]/110 ">
+        <div className="w-full bg-[url(/hero_bg.jpeg)] text-[#fefefe]/110 ">
 
             <div className='container'>
                 <div className="pt-[220px] pb-[170px] min-h-[960px] ">
-
-
-                    <div className='md:max-w-[900px] max-w-[370px] '>
-                        <h1 className="md:text-[120px] font-bold font-[family-name:var(--font-poppins)] mb-[60px] sm:text-[40px] text-[40px] leading-[1.25em]">
+                    <div className='md:max-w-[800px] max-w-[370px] '>
+                        <h1 className="text-[#fefefe]/130  md:text-[100px] font-bold font-[family-name:var(--font-poppins)] mb-[60px] sm:text-[40px] text-[40px] leading-[1.25em]">
                             Creativity In Our Blood Line
                         </h1>
                     </div>
@@ -42,7 +40,7 @@ const HeroSection = () => {
                         </div>
 
 
-                        <div className='md:text-[18px] text-[13px] md:max-w-[610px] max-w-[350px] leading-[1.9em]'>
+                        <div className='md:text-[18px] text-[13px] md:max-w-[550px] max-w-[350px] leading-[1.9em]'>
                             We deliver best problem solving solution for our client and provide
                             finest finishing product in present and upcoming future.
                         </div>

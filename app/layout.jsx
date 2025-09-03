@@ -2,6 +2,8 @@ import { Geist, Geist_Mono, Poppins, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/foundations/navbar";
 import Footer from "@/components/ui/foundations/footer";
+import { SidebarProvider, SidebarTrigger  } from "@/components/ui/shadcn/sidebar"
+import AppSidebar from "@/components/ui/foundations/app-sidebar";
 
 
 const geistSans = Geist({
@@ -36,7 +38,8 @@ export default function RootLayout({ children }) {
         className={`${poppins.variable} ${open_sans.className} antialiased`}
       
       >
-        <Navbar />
+        <Navbar/>
+         
         {children}
         <Footer />
       </body>

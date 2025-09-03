@@ -152,10 +152,10 @@ const Footer = () => {
         <footer className='bg-[#181818] text-[#efefef]/70 w-full'>
             <div className="container">
                 <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 py-6'>
-                    <div className='mb-[40px]'>
+                    <div className='mb-[40px] '>
                         <Image width={110} height={45} src="/logo.svg" alt="logo" />
                         <div className=''>
-                            <p className='text-sm font-normal mt-[30px] '>Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium.</p>
+                            <p className='text-[16px] font-normal mt-[30px] max-w-[250px]'>Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium.</p>
                         </div>
                         <div className='flex justify-start space-x-3 mt-[25px] -mr-[7px] -mb-[7px]'>
                             <div className="h-9 w-9 rounded-full border-1 border-white  text-white flex items-center justify-center">
@@ -229,8 +229,8 @@ const Footer = () => {
 
                     <div className='mb-[40px]'>
 
-                        <div className='mb-[35px] text-[18px] text-white font-[family-name:var(--font-poppins)]'>Services</div>
-                        <ul className="cs-menu_widget list text-sm font-normal ">
+                        <div className='mb-[35px] text-[18px] text-[#fefefe]/200 font-bold  font-[family-name:var(--font-poppins)]'>Services</div>
+                        <ul className="cs-menu_widget list  font-normal ">
                             <li className='mb-[20px]  hover:text-orange-700 ' ><a href="/service/service-details">UI/UX design</a></li>
                             <li className='mb-[20px]  hover:text-orange-700 '><a href="/service/service-details" >WP development</a></li>
                             <li className='mb-[20px]  hover:text-orange-700 '><a href="/service/service-details" >Digital marketing</a></li>
@@ -241,7 +241,7 @@ const Footer = () => {
 
 
                     <div className='mb-[40px]'>
-                        <div className='mb-[35px] text-[18px] text-white font-[family-name:var(--font-poppins)]'>Contact Us</div>
+                        <div className='mb-[35px] text-[18px] text-[#fefefe]/200 font-bold font-[family-name:var(--font-poppins)]'>Contact Us</div>
                         <ul>
                             <li className='mb-[20px] text-[16px]'>+44 454 7800 112</li>
                             <li className='mb-[20px] text-[16px]' >infotech@arino.com</li>
@@ -252,13 +252,15 @@ const Footer = () => {
 
                     <div className='mb-[40px]'>
 
-                        <div className='mb-[35px] text-[18px] text-white font-[family-name:var(--font-poppins)]'>Subscribe</div>
-                        <div className='flex items-center lg:justify-center rounded-[10px] md:justify-between sm:justify-between justify-between   bg-black p-[6px] md:gap-1 '>
-                            <Input className="placeholder focus:outline-none focus:ring-0 focus:border-transparent " type="email" placeholder="example@gmail.com" />
-                            <Button variant='destructive' size='default'>Send</Button>
+                        <div className='mb-[35px] text-[18px] text-[#fefefe]/200 font-bold  font-[family-name:var(--font-poppins)]'>Subscribe</div>
+                        <div className="h-[50px] w-full max-w-full flex items-center gap-2 rounded-[10px] bg-black py-[5px] px-2">
+                            <Input className="flex-1 min-w-0 bg-black text-white placeholder:text-neutral-500 border-none focus:outline-none focus:ring-0 " type="email" placeholder="example@gmail.com" />
+                            <Button variant='destructive' size='default' className='whitespace-nowrap'>Send</Button>
+
+                            {/* flex items-center lg:justify-center rounded-[10px] md:justify-between sm:justify-between justify-between bg-black px-[6px] md:gap-1  */}
 
                         </div>
-                        <div className='text-[16px] mt-[25px]'>
+                        <div className='text-[16px] mt-[25px] block'>
                             At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit.
                         </div>
 
@@ -266,7 +268,7 @@ const Footer = () => {
                 </div>
 
                 <div className=" lg:justify-between md:flex md:justify-between text-center py-[20px] border-t-2 border-neutral-700  ">
-                    <div className="py-[4px] block   ">
+                    <div className="py-[4px] block">
                         <div className='text-[16px] box-border font-opensans'>
                             Coypright © 2025 Laralink.
                         </div>
