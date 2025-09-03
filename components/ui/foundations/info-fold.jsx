@@ -88,12 +88,12 @@ const InfoFold = () => {
             <div className='container '>
 
                 <div className=' bg-[url(/cta_bg.jpeg)] rounded-[15px] text-[#fefefe]/100 -mt-[130px]   py-[60px] px-[50px] 
-                flex  lg:flex-row flex-col '>
+                flex  xl:flex-row flex-col '>
                     <div className='left_content'>
                         <h2 className='text-[42px] mb-[20px] font-[family-name:var(--font-poppins)] font-bold'>
                             Our fun fact
                         </h2>
-                        <p className='text-[16px] text-[#fefefe]/70 lg:max-w-[400px] leading-[1.75em] mb-[20px]'>
+                        <p className='text-[16px] text-[#fefefe]/70 xl:max-w-[400px] leading-[1.75em] mb-[20px]'>
                             Sed ut perspiciatis unde omnis iste natus error
                             voluptatem accusantium doloremque laudantium,
                             totam rem aperiam, eaque ipsa quae ab illo
@@ -102,7 +102,7 @@ const InfoFold = () => {
                     </div>
 
                     <div className='right_content lg:pl-[50px] '>
-                        <div className='grid md:grid-cols-2 lg:gap-y-9 lg:gap-x-10 grid-cols-1 gap-4'>
+                        <div className='grid md:grid-cols-2 lg:gap-y-9 lg:gap-x-12 grid-cols-1 gap-4'>
 
                             {/* 40K Clients */}
                             <div className="flex items-center ">
@@ -149,7 +149,7 @@ const InfoFold = () => {
 
             </div>
 
-            <div className='bg-[#181818]'>
+            {/* <div className='bg-[#181818]'>
                 <div className='h-[100px]'></div>
 
                 <div className='container'>
@@ -227,7 +227,7 @@ const InfoFold = () => {
                                
                             </div>
                         </div> */}
-                        </div>
+                        {/* </div>
                     </div>
                 </div>
 
@@ -243,10 +243,24 @@ const InfoFold = () => {
 
                 <div className='h-[70px]'></div>
 
-            </div>
+            </div> */} 
 
+            <div className='h-[130px]'></div>
+
+                <div className='container'>
+                    <h2 className='font-[family-name:var(--font-poppins)] lg:text-[42px] text-[36px]  font-bold text-[#fefefe]/100 text-center '>
+                        Our agile process is ability to adapt and respond to change.
+                        Agile organizations view change as an opportunity, not a threat.
+                    </h2>
+                </div>
+
+         <div className='h-[100px]'></div>
 
         </div>
+
+        
+
+        
 
 
     )

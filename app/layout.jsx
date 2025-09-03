@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${open_sans.className} antialiased`}
+        className={`${poppins.variable} ${open_sans.className} antialiased bg-[#181818]`}
       
       >
         <Navbar/>

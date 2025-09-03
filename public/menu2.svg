@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Outer Circle -->
+  <circle cx="12" cy="12" r="11"></circle>
+
+  <!-- Three horizontal lines -->
+  <line x1="8" y1="9" x2="16" y2="9"></line>
+  <line x1="8" y1="12" x2="16" y2="12"></line>
+  <line x1="8" y1="15" x2="16" y2="15"></line>
+</svg>

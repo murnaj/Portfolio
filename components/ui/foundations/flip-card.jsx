@@ -8,7 +8,7 @@ const FlipCard = () => {
                 <div className='h-[40px]'></div>
                 <div className='flex lg:justify-between md:justify-center items-center gap-2'>
                     {["/partner_1.svg", "/partner_2.svg", "/partner_3.svg", "/partner_4.svg", "/partner_5.svg"].map((src, i) => (
-                        <div key={i} className="relative w-20 h-8 sm:w-28 sm:h-11 lg:w-[210px] lg:h-[75px]">
+                        <div key={i} className="relative w-20 h-8 md:w-35 md:h-20 lg:w-[210px] lg:h-[75px]">
                             <Image src={src} alt="logo" fill className="object-contain" />
                         </div>
                     ))}
@@ -18,7 +18,7 @@ const FlipCard = () => {
                 
                 <div className='container'>
                 <div className='w-full bg-[url(/cta_bg.jpeg)] py-[90px] gap-4 rounded-2xl'>
-                    <h2 className="text-[#fefefe]/200 font-bold font-[family-name:var(--font-poppins)] text-center lg:text-[50px] text-[25px] lg:max-w-[1110px] mx-auto">
+                    <h2 className="text-[#fefefe]/200 font-bold font-[family-name:var(--font-poppins)] text-center lg:text-[50px] md:text-[36px] text-[28px] lg:max-w-[1140px] max-w-[900px] ">
                         Let's disscuse make something
                         <span>
                             <i className="lg:mx-3 mx-1">cool</i>
@@ -28,13 +28,13 @@ const FlipCard = () => {
                     <div className='h-[50px]'></div>
                     <div className='' >
                         <div className='flex justify-center items-center'>
-                            <a className='hover:underline hover:text-orange-700 lg:text-[16px] text-[12px] text-[#FFFFFF] font-bold' href='/#'>
+                            <a className='hover:underline hover:text-orange-700 text-[16px]  text-[#FFFFFF] font-bold' href='/#'>
                                 Apply For Meeting
                             </a>
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 aria-hidden="true"
                                 role="img"
-                                className="ml-[15px] lg:text-[24px] mg:text-[24px] text-[24px] hover:text-orange-700 "
+                                className="ml-[15px] text-[24px]  hover:text-orange-700 "
                                 width="1em"
                                 height="1em"
                                 viewBox="0 0 16 16">

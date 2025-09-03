@@ -9,12 +9,12 @@ const HeroSection = () => {
             <div className='container'>
                 <div className="pt-[220px] pb-[170px] min-h-[960px] ">
                     <div className='md:max-w-[800px] max-w-[370px] '>
-                        <h1 className="text-[#fefefe]/130  md:text-[100px] font-bold font-[family-name:var(--font-poppins)] mb-[60px] sm:text-[40px] text-[40px] leading-[1.25em]">
+                        <h1 className="text-[#fefefe]/130  lg:text-[100px] md:text-[56px] lg:max-w-[750px] md:max-w-[450px] text-[42px] font-bold font-[family-name:var(--font-poppins)] mb-[60px]  leading-[1.25em]">
                             Creativity In Our Blood Line
                         </h1>
                     </div>
 
-                    <div className="flex md:flex-row flex-col-reverse md:justify-between md:items-center gap-4">
+                    <div className="flex lg:flex-row flex-col-reverse lg:justify-between lg:items-center gap-4">
                         <div className="text-white text-sm font-normal text-[16px] decoration-orange-700 hover:text-orange-700 ">
                             <a
                                 href="/#"
@@ -40,7 +40,7 @@ const HeroSection = () => {
                         </div>
 
 
-                        <div className='md:text-[18px] text-[13px] md:max-w-[550px] max-w-[350px] leading-[1.9em]'>
+                        <div className='text-[16px] md:max-w-[550px] max-w-[350px] leading-[1.9em]'>
                             We deliver best problem solving solution for our client and provide
                             finest finishing product in present and upcoming future.
                         </div>

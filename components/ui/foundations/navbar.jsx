@@ -78,7 +78,7 @@ const Navbar = () => {
               aria-label="Open sidebar"
             >
               <Image
-                src="/sort.svg"
+                src="/menu2.svg"
                 alt="Open Sidebar"
                 width={40}
                 height={25}
@@ -158,7 +158,7 @@ const Navbar = () => {
                           <svg xmlns='http://www.w3.org/2000/svg'
                             aria-hidden="true"
                             role="img"
-                            class="text-[24px]"
+                            className="text-[24px]"
                             width="1em"
                             height="1em"
                             viewBox="0 0 24 24">
