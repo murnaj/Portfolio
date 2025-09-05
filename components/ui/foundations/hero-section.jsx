@@ -4,7 +4,7 @@ import React from 'react'
 const HeroSection = () => {
     return (
 
-        <div className="w-full bg-[url(/hero_bg.jpeg)] text-[#fefefe]/110 ">
+        <div className="w-full bg-[url(/hero_bg.jpeg)] text-[#fefefe]/110  bg-cover">
 
             <div className='container'>
                 <div className="pt-[220px] pb-[170px] min-h-[960px] ">

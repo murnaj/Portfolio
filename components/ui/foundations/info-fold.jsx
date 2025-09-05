@@ -87,13 +87,13 @@ const InfoFold = () => {
         <div className=' bg-[#181818] w-full contents'>
             <div className='container '>
 
-                <div className=' bg-[url(/cta_bg.jpeg)] rounded-[15px] text-[#fefefe]/100 -mt-[130px]   py-[60px] px-[50px] 
-                flex  xl:flex-row flex-col '>
+                <div className=' bg-[url(/cta_bg.jpeg)] bg-cover rounded-[15px] text-[#fefefe]/100 -mt-[130px] py-[60px] px-[50px] 
+                flex xl:flex-row flex-col '>
                     <div className='left_content'>
-                        <h2 className='text-[42px] mb-[20px] font-[family-name:var(--font-poppins)] font-bold'>
+                        <h2 className='text-[42px] xl:text-[50px] mb-[20px] font-[family-name:var(--font-poppins)] font-bold'>
                             Our fun fact
                         </h2>
-                        <p className='text-[16px] text-[#fefefe]/70 xl:max-w-[400px] leading-[1.75em] mb-[20px]'>
+                        <p className='text-[16px] text-[#fefefe]/70 xl:max-w-[550px] leading-[1.75em] mb-[20px]'>
                             Sed ut perspiciatis unde omnis iste natus error
                             voluptatem accusantium doloremque laudantium,
                             totam rem aperiam, eaque ipsa quae ab illo
@@ -101,12 +101,12 @@ const InfoFold = () => {
                         </p>
                     </div>
 
-                    <div className='right_content lg:pl-[50px] '>
+                    <div className='right_content xl:pl-[80px] '>
                         <div className='grid md:grid-cols-2 lg:gap-y-9 lg:gap-x-12 grid-cols-1 gap-4'>
 
                             {/* 40K Clients */}
                             <div className="flex items-center ">
-                                <div className="font-bold mr-[13px] font-[family-name:var(--font-poppins)]  text-[42px] ">40K</div>
+                                <div className="font-bold mr-[13px] font-[family-name:var(--font-poppins)]  text-[42px] xl:text-[50px] ">40K</div>
                                 <div className="">
                                     <div className="text-[#fe4817] text-[18px] -mt-[8px] -mb-[5px]">+</div>
                                     <p className=" text-[#fefefe]/70 text-[16px] whitespace-nowrap">Global Happy Clients</p>
@@ -115,7 +115,7 @@ const InfoFold = () => {
 
                             {/* 50K Projects */}
                             <div className="flex items-center ">
-                                <div className="font-bold  mr-[13px] font-[family-name:var(--font-poppins)]  text-[42px]  ">50K</div>
+                                <div className="font-bold  mr-[13px] font-[family-name:var(--font-poppins)]  text-[42px] xl:text-[50px]  ">50K</div>
                                 <div className="">
                                     <div className="text-[#fe4817]  text-[18px] -mt-[8px] -mb-[5px]">+</div>
                                     <p className=" text-[#fefefe]/70 text-[16px] whitespace-nowrap ">Project Completed</p>
@@ -124,7 +124,7 @@ const InfoFold = () => {
 
                             {/* 245 Team Members */}
                             <div className="flex items-center ">
-                                <div className="  font-bold mr-[13px] font-[family-name:var(--font-poppins)] text-[42px] ">245</div>
+                                <div className="  font-bold mr-[13px] font-[family-name:var(--font-poppins)] text-[42px] xl:text-[50px]">245</div>
                                 <div className="">
                                     <div className="text-[#fe4817]  text-[18px] -mt-[8px] -mb-[5px]">+</div>
                                     <p className=" text-[#fefefe]/70 text-[16px]">Team Members</p>
@@ -133,7 +133,7 @@ const InfoFold = () => {
 
                             {/* 550 Digital Products */}
                             <div className="flex items-center ">
-                                <div className="  font-bold mr-[13px] font-[family-name:var(--font-poppins)] text-[42px] ">550</div>
+                                <div className="  font-bold mr-[13px] font-[family-name:var(--font-poppins)] text-[42px] xl:text-[50px]">550</div>
                                 <div className="">
                                     <div className="text-[#fe4817] -mt-[8px] -mb-[5px] text-[18px]">+</div>
                                     <p className=" text-[#fefefe]/70 text-[16px] ">Digital Products</p>
