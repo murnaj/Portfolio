@@ -62,10 +62,10 @@ const FlipCard = () => {
             <div className='h-[50px]'></div>
 
             <div className='container'>
-                <div className='w-full bg-[url(/cta_bg.jpeg)] py-[90px] gap-4 rounded-2xl'>
+                <div className='w-full bg-[url(/cta_bg.jpeg)] py-[90px] gap-4 rounded-2xl  bg-cover'>
                     
                     <div className='lg:max-w-[1140px] 2xl:max-w-[1400px] text-center'>
-                    <h2 className="text-[#fefefe]/200 font-bold font-[family-name:var(--font-poppins)] text-center lg:text-[50px] md:text-[36px] text-[28px]  mx-auto bg-cover ">
+                    <h2 className="text-[#fefefe]/200 font-bold font-[family-name:var(--font-poppins)] text-center lg:text-[50px] md:text-[36px] text-[28px]  ">
                         Let's disscuse make something
                         <span>
                             <i className="lg:mx-3 mx-1">cool</i>
