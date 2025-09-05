@@ -106,7 +106,7 @@ const InfoFold = () => {
 
                             {/* 40K Clients */}
                             <div className="flex items-center ">
-                                <div className="font-bold mr-[13px] font-[family-name:var(--font-poppins)]  text-[42px] xl:text-[50px] ">40K</div>
+                                <div className="font-bold mr-[13px] font-[family-name:var(--font-poppins)]  text-[42px] 2xl:text-[50px] ">40K</div>
                                 <div className="">
                                     <div className="text-[#fe4817] text-[18px] -mt-[8px] -mb-[5px]">+</div>
                                     <p className=" text-[#fefefe]/70 text-[16px] whitespace-nowrap">Global Happy Clients</p>
@@ -115,7 +115,7 @@ const InfoFold = () => {
 
                             {/* 50K Projects */}
                             <div className="flex items-center ">
-                                <div className="font-bold  mr-[13px] font-[family-name:var(--font-poppins)]  text-[42px] xl:text-[50px]  ">50K</div>
+                                <div className="font-bold  mr-[13px] font-[family-name:var(--font-poppins)]  text-[42px] 2xl:text-[50px]  ">50K</div>
                                 <div className="">
                                     <div className="text-[#fe4817]  text-[18px] -mt-[8px] -mb-[5px]">+</div>
                                     <p className=" text-[#fefefe]/70 text-[16px] whitespace-nowrap ">Project Completed</p>
@@ -124,7 +124,7 @@ const InfoFold = () => {
 
                             {/* 245 Team Members */}
                             <div className="flex items-center ">
-                                <div className="  font-bold mr-[13px] font-[family-name:var(--font-poppins)] text-[42px] xl:text-[50px]">245</div>
+                                <div className="  font-bold mr-[13px] font-[family-name:var(--font-poppins)] text-[42px] 2xl:text-[50px]">245</div>
                                 <div className="">
                                     <div className="text-[#fe4817]  text-[18px] -mt-[8px] -mb-[5px]">+</div>
                                     <p className=" text-[#fefefe]/70 text-[16px]">Team Members</p>
@@ -133,7 +133,7 @@ const InfoFold = () => {
 
                             {/* 550 Digital Products */}
                             <div className="flex items-center ">
-                                <div className="  font-bold mr-[13px] font-[family-name:var(--font-poppins)] text-[42px] xl:text-[50px]">550</div>
+                                <div className="  font-bold mr-[13px] font-[family-name:var(--font-poppins)] text-[42px] 2xl:text-[50px]">550</div>
                                 <div className="">
                                     <div className="text-[#fe4817] -mt-[8px] -mb-[5px] text-[18px]">+</div>
                                     <p className=" text-[#fefefe]/70 text-[16px] ">Digital Products</p>

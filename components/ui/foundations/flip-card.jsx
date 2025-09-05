@@ -64,7 +64,7 @@ const FlipCard = () => {
             <div className='container'>
                 <div className='w-full bg-[url(/cta_bg.jpeg)] py-[90px] gap-4 rounded-2xl  bg-cover'>
                     
-                    <div className='lg:max-w-[1140px] 2xl:max-w-[1400px] text-center'>
+                    <div className='lg:max-w-[1140px] 2xl:max-w-[1650px] text-center'>
                     <h2 className="text-[#fefefe]/200 font-bold font-[family-name:var(--font-poppins)] text-center lg:text-[50px] md:text-[36px] text-[28px]  ">
                         Let's disscuse make something
                         <span>
