@@ -72,6 +72,15 @@
   }
 }
 
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px #ee4717; /* Orange stroke */
+}
+
+.marquee__inner:hover {
+  animation-play-state: paused;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -149,3 +158,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+

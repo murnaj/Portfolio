@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { Card, CardContent } from "@/components/ui/shadcn/card";
 import {
     Carousel,
@@ -11,13 +11,37 @@ import {
 
 } from "@/components/ui/shadcn/carousel";
 import Image from 'next/image';
+import useEmblaCarousel from 'embla-carousel-react'
 
+
+const images = [
+    {
+        src: "/portfolio_3.jpeg",
+        title: "Colorful Art Work",
+        description: "See Details -",
+    },
+    {
+        src: "/portfolio_1.jpeg",
+        title: "Colorful Art Work",
+        description: "See Details -",
+    },
+    {
+        src: "/portfolio_2.jpeg",
+        title: "Colorful Art Work",
+        description: "See Details -",
+    },
+    {
+        src: "/portfolio_0.jpg",
+        title: "Colorful Art Work",
+        description: "See Details -",
+    },
+];
 
 const InfoFold = () => {
 
-    const [api, setApi] = React.useState(null);
-    const [current, setCurrent] = React.useState(0);
-    const [count, setCount] = React.useState(0);
+    const [api, setApi] = useState(null);
+    const [current, setCurrent] = useState(0);
+    const [count, setCount] = useState(0);
     React.useEffect(() => {
         if (!api) {
             return;
@@ -28,6 +52,22 @@ const InfoFold = () => {
             setCurrent(api.selectedScrollSnap() + 1);
         });
     }, [api]);
+
+
+
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
+    const [selectedIndex, setSelectedIndex] = useState(0);
+
+    const onSelect = useCallback(() => {
+        if (!emblaApi) return;
+        setSelectedIndex(emblaApi.selectedScrollSnap());
+    }, [emblaApi]);
+
+    useEffect(() => {
+        if (!emblaApi) return;
+        emblaApi.on("select", onSelect);
+        onSelect();
+    }, [emblaApi, onSelect]);
 
 
 
@@ -190,21 +230,21 @@ const InfoFold = () => {
                                     <div className="lg:px-[12px]"></div>
                                     <div className="relative px-[12px] flex items-center justify-center">
                                         <Image src="/service_1.jpeg" alt="alt" width={170} height={80} className="brightness-55 hover:brightness-100 rounded-[15px] w-full h-full object-cover" />
-                                        <span className="absolute  font-[family-name:var(--font-poppins)] text-white font-bold lg:text-[20px] text-[30px]  leading-[1.5em]  ">UI/UX design</span>
+                                        <span className="absolute  font-[family-name:var(--font-poppins)] text-white font-bold lg:text-[20px] text-[20px] md:text-[30px]  leading-[1.5em]  ">UI/UX design</span>
                                     </div>
                                     <div className="lg:px-[12px] "></div>
                                     <div className="relative px-[12px] flex items-center justify-center">
                                         <Image src="/service_2.jpeg" alt="alt" width={170} height={80} className="brightness-55 hover:brightness-100 rounded-[15px] w-full h-full object-cover" />
-                                        <span className="absolute  font-[family-name:var(--font-poppins)] text-white font-bold lg:text-[20px] text-[30px] lg:max-w-[135px] leading-[1.5em]">React.js Development</span>
+                                        <span className="absolute  font-[family-name:var(--font-poppins)] text-white font-bold lg:text-[18px] text-[20px] md:text-[30px] lg:max-w-[125px] leading-[1.5em]">React.js Development</span>
                                     </div>
                                     <div className="relative px-[12px] flex items-center justify-center">
                                         <Image src="/service_3.jpeg" alt="alt" width={170} height={80} className="brightness-55 hover:brightness-100 rounded-[15px] w-full h-full object-cover" />
-                                        <span className="absolute   font-[family-name:var(--font-poppins)] text-white  font-bold lg:text-[20px] text-[30px] lg:max-w-[120px] leading-[1.5em]">Digital Marketing</span>
+                                        <span className="absolute   font-[family-name:var(--font-poppins)] text-white  font-bold lg:text-[20px] text-[20px] md:text-[30px] lg:max-w-[120px] leading-[1.5em]">Digital Marketing</span>
                                     </div>
                                     <div className="lg:px-[12px]"></div>
                                     <div className="relative px-[12px] flex items-center justify-center">
                                         <Image src="/service_4.jpeg" alt="alt" width={170} height={80} className="brightness-55 hover:brightness-100 rounded-[15px] w-full h-full object-cover" />
-                                        <span className="absolute  font-[family-name:var(--font-poppins)] text-white  font-bold lg:text-[20px] text-[30px]  leading-[1.5em]">Technology</span>
+                                        <span className="absolute  font-[family-name:var(--font-poppins)] text-white  font-bold lg:text-[20px] text-[20px] md:text-[30px]  leading-[1.5em]">Technology</span>
                                     </div>
                                     <div className="lg:px-[12px]"></div>
                                 </div>
@@ -217,18 +257,70 @@ const InfoFold = () => {
 
                 <div>
                     <div className='container'>
-                        <h3 className='text-center text-[#999696] text-[18px] font-[family-name:var(--font-poppins)] mb-[20px]'>
+                        <h3 className='text-center text-[#999696] text-[16px] lg:text-[18px] font-[family-name:var(--font-poppins)] mb-[20px]'>
                             Latest Projects
                         </h3>
-                        <h2 className='text-center text-[#FEFEFE] text-[42px] font-[family-name:var(--font-poppins)] font-bold'>
+                        <h2 className='text-center text-[#FEFEFE] text-[36px] lg:text-[42px] 2xl:text-[50px] font-[family-name:var(--font-poppins)] font-bold'>
                             Portfolio to explore
                         </h2>
                     </div>
+                    <div className='h-[90px]'></div>
+
+                    <div>
+                        <div className="w-full mx-auto">
+                            {/* Carousel Viewport */}
+                            <div className="overflow-hidden rounded-lg" ref={emblaRef}>
+                                <div className="flex">
+                                    {images.map((item, index) => (
+                                        <div
+                                            className="flex-[0_0_100%] sm:flex-[0_0_80%] md:flex-[0_0_60%] md:px-2 px-4 "
+                                            key={index}
+                                        >
+                                            <div className="relative w-full h-[300px] md:h-[400px] lg:h-[460px] 2xl:h-[650px] overflow-hidden rounded-lg">
+                                                <Image
+                                                    src={item.src}
+                                                    alt={`Slide ${index}`}
+                                                    fill
+                                                    className="object-cover transition-transform duration-500 group-hover:scale-105 "
+                                                />
+                                                {/* Hover Overlay - Visible only on selected slide */}
+                                                <div
+                                                    className={`absolute inset-0 top-50 md:top-70 lg:top-70 2xl:top-100 flex items-center justify-start transition-all duration-500 ${selectedIndex === index
+                                                            ? "opacity-100 translate-y-0"
+                                                            : "opacity-0 translate-y-10 pointer-events-none"
+                                                        }`}
+                                                >
+                                                    <div className="relative bg-orange-600 rounded-full p-10 w-[1px] h-[1px] lg:w-[180px] lg:h-[180px] flex flex-col justify-center items-center text-center text-white shadow-lg hover:scale-110 transition-transform duration-500">
+                                                        <h3 className="lg:font-bold lg:text-[20px] text-[6px]">{item.title}</h3>
+                                                        <p className="lg:text-[16px] text-[5px] mt-2 opacity-80">{item.description}</p>
+                                                        <div className="absolute bottom-6 w-8 h-[2px] bg-white opacity-60"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Navigation Dots */}
+                            <div className="flex justify-center mt-6 gap-3">
+                                {images.map((_, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => emblaApi && emblaApi.scrollTo(index)}
+                                        className={`w-4 h-4 rounded-full border border-orange-700 transition-all ${selectedIndex === index
+                                            ? "bg-orange-700 scale-110"
+                                            : "bg-transparent"
+                                            }`}
+                                    ></button>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
 
                     <div className='h-[90px]'></div>
-                    <div>
 
-                    </div>
 
                 </div>
 
@@ -252,46 +344,46 @@ const InfoFold = () => {
                                         {Array.from({ length: 5 }).map((_, index) => (
                                             <CarouselItem key={index} className='max-w-[500px]'>
                                                 <div className=''>
-                                                <Card>
-                                                    <CardContent className="flex aspect-video items-center justify-between ">
-                                                        <div className='flex flex-col'>
-                                                            <div>
-                                                                <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
-                                                                    2020
-                                                                </h3>
-                                                                <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>New technology innovation</h2>
-                                                                <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Honorable mention</p>
-                                                                <p className='text-[#b1b1b1] text-[16px]'>Desktop exelence</p>
+                                                    <Card>
+                                                        <CardContent className="flex aspect-video items-center justify-between ">
+                                                            <div className='flex flex-col'>
+                                                                <div>
+                                                                    <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
+                                                                        2020
+                                                                    </h3>
+                                                                    <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>New technology innovation</h2>
+                                                                    <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Honorable mention</p>
+                                                                    <p className='text-[#b1b1b1] text-[16px]'>Desktop exelence</p>
+                                                                </div>
+                                                                <div>
+                                                                    <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
+                                                                        2019
+                                                                    </h3>
+                                                                    <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>Google awards</h2>
+                                                                    <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Website of the day</p>
+                                                                    <p className='text-[#b1b1b1] text-[16px]'>Mobile exelence</p>
+                                                                </div>
                                                             </div>
-                                                            <div>
-                                                                <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
-                                                                    2019
-                                                                </h3>
-                                                                <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>Google awards</h2>
-                                                                <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Website of the day</p>
-                                                                <p className='text-[#b1b1b1] text-[16px]'>Mobile exelence</p>
+                                                            <div className='flex flex-col'>
+                                                                <div>
+                                                                    <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
+                                                                        2022
+                                                                    </h3>
+                                                                    <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>UI/UX design of the month</h2>
+                                                                    <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Website of the day</p>
+                                                                    <p className='text-[#b1b1b1] text-[16px]'>Mobile exelence</p>
+                                                                </div>
+                                                                <div>
+                                                                    <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
+                                                                        2021
+                                                                    </h3>
+                                                                    <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>CSS awards design</h2>
+                                                                    <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Honorable mention</p>
+                                                                    <p className='text-[#b1b1b1] text-[16px]'>Desktop exelence</p>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div className='flex flex-col'>
-                                                            <div>
-                                                                <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
-                                                                    2022
-                                                                </h3>
-                                                                <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>UI/UX design of the month</h2>
-                                                                <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Website of the day</p>
-                                                                <p className='text-[#b1b1b1] text-[16px]'>Mobile exelence</p>
-                                                            </div>
-                                                            <div>
-                                                                <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
-                                                                    2021
-                                                                </h3>
-                                                                <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>CSS awards design</h2>
-                                                                <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Honorable mention</p>
-                                                                <p className='text-[#b1b1b1] text-[16px]'>Desktop exelence</p>
-                                                            </div>
-                                                        </div>
-                                                    </CardContent>
-                                                </Card>
+                                                        </CardContent>
+                                                    </Card>
                                                 </div>
                                             </CarouselItem>
                                         ))}
