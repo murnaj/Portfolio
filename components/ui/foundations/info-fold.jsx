@@ -1,15 +1,17 @@
 "use client";
 
 import React from 'react'
-// import { Card, CardContent } from "@/components/ui/shadcn/card";
-// import {
-//     Carousel,
-//     CarouselContent,
-//     CarouselItem,
-//     CarouselNext,
-//     CarouselPrevious,
+import { Card, CardContent } from "@/components/ui/shadcn/card";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
 
-// } from "@/components/ui/shadcn/carousel";
+} from "@/components/ui/shadcn/carousel";
+import Image from 'next/image';
+
 
 const InfoFold = () => {
 
@@ -26,6 +28,8 @@ const InfoFold = () => {
             setCurrent(api.selectedScrollSnap() + 1);
         });
     }, [api]);
+
+
 
     return (
         //    <div className="main-content2 mx-[105.5px] px-[12px] bg-neutral-950  max-w-[1140px] rounded-lg -mt-[130px] absolute right-0 left-0 ">
@@ -90,7 +94,7 @@ const InfoFold = () => {
                 <div className=' bg-[url(/cta_bg.jpeg)] bg-cover rounded-[15px] text-[#fefefe]/100 -mt-[130px] py-[60px] px-[50px] 
                 flex xl:flex-row flex-col '>
                     <div className='left_content'>
-                        <h2 className='text-[42px] xl:text-[50px] mb-[20px] font-[family-name:var(--font-poppins)] font-bold'>
+                        <h2 className='text-[42px] xl:text-[42px] mb-[20px] font-[family-name:var(--font-poppins)] font-bold'>
                             Our fun fact
                         </h2>
                         <p className='text-[16px] text-[#fefefe]/70 xl:max-w-[550px] leading-[1.75em] mb-[20px]'>
@@ -149,22 +153,22 @@ const InfoFold = () => {
 
             </div>
 
-            {/* <div className='bg-[#181818]'>
-                <div className='h-[100px]'></div>
+            <div className='bg-[#181818]'>
+                <div className='h-[150px]'></div>
 
                 <div className='container'>
                     <div className='Service text-[#fefefe]/100'>
-                        <div className='flex'>
+                        <div className='flex xl:flex-row flex-col gap-8'>
                             <div className='px-[12px]'>
-                                <h3 className='mb-[20px] font-[family-name:var(--font-poppins)] md:text-[18px] text-[15px] text-[#fefefe]/60'>
+                                <h3 className='mb-[20px] font-[family-name:var(--font-poppins)] md:text-[18px] text-[16px] text-[#fefefe]/60'>
                                     What can we do
                                 </h3>
-                                <h2 className='font-[family-name:var(--font-poppins)] md:text-[50px] text-[30px] font-bold md:max-w-[450px] max-w-[700px]'>
+                                <h2 className='font-[family-name:var(--font-poppins)] 2xl:text-[50px] lg:text-[42px] text-[36px] font-bold xl:max-w-[700px] md:max-w-[650px] max-w-[1100] leading-[1.3em] '>
                                     Services we can help you with
                                 </h2>
                                 <div className='md:h-[45px] h-[20px]'></div>
                                 <div className='flex items-center'>
-                                    <a className='hover:underline hover:text-orange-700 lg:text-[16px] text-[12px]' href='/#'>
+                                    <a className='hover:underline hover:text-orange-700 lg:text-[16px] text-[16px]' href='/#'>
                                         See All Services
                                     </a>
                                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -181,58 +185,130 @@ const InfoFold = () => {
                                 </div>
 
                             </div>
-                            <div className='pics px-2 mt-4'>
-
-
+                            <div className=' px-3 mt-0'>
+                                <div className="grid md:grid-cols-1 grid-cols-1 lg:grid-cols-4 md:gap-2 gap-4">
+                                    <div className="lg:px-[12px]"></div>
+                                    <div className="relative px-[12px] flex items-center justify-center">
+                                        <Image src="/service_1.jpeg" alt="alt" width={170} height={80} className="brightness-55 hover:brightness-100 rounded-[15px] w-full h-full object-cover" />
+                                        <span className="absolute  font-[family-name:var(--font-poppins)] text-white font-bold lg:text-[20px] text-[30px]  leading-[1.5em]  ">UI/UX design</span>
+                                    </div>
+                                    <div className="lg:px-[12px] "></div>
+                                    <div className="relative px-[12px] flex items-center justify-center">
+                                        <Image src="/service_2.jpeg" alt="alt" width={170} height={80} className="brightness-55 hover:brightness-100 rounded-[15px] w-full h-full object-cover" />
+                                        <span className="absolute  font-[family-name:var(--font-poppins)] text-white font-bold lg:text-[20px] text-[30px] lg:max-w-[135px] leading-[1.5em]">React.js Development</span>
+                                    </div>
+                                    <div className="relative px-[12px] flex items-center justify-center">
+                                        <Image src="/service_3.jpeg" alt="alt" width={170} height={80} className="brightness-55 hover:brightness-100 rounded-[15px] w-full h-full object-cover" />
+                                        <span className="absolute   font-[family-name:var(--font-poppins)] text-white  font-bold lg:text-[20px] text-[30px] lg:max-w-[120px] leading-[1.5em]">Digital Marketing</span>
+                                    </div>
+                                    <div className="lg:px-[12px]"></div>
+                                    <div className="relative px-[12px] flex items-center justify-center">
+                                        <Image src="/service_4.jpeg" alt="alt" width={170} height={80} className="brightness-55 hover:brightness-100 rounded-[15px] w-full h-full object-cover" />
+                                        <span className="absolute  font-[family-name:var(--font-poppins)] text-white  font-bold lg:text-[20px] text-[30px]  leading-[1.5em]">Technology</span>
+                                    </div>
+                                    <div className="lg:px-[12px]"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div className='h-[150px]'></div>
 
-                <div className='h-[50px]'></div>
+                <div>
+                    <div className='container'>
+                        <h3 className='text-center text-[#999696] text-[18px] font-[family-name:var(--font-poppins)] mb-[20px]'>
+                            Latest Projects
+                        </h3>
+                        <h2 className='text-center text-[#FEFEFE] text-[42px] font-[family-name:var(--font-poppins)] font-bold'>
+                            Portfolio to explore
+                        </h2>
+                    </div>
+
+                    <div className='h-[90px]'></div>
+                    <div>
+
+                    </div>
+
+                </div>
+
+                <div className='h-[150px]'></div>
 
                 <div className='container'>
-                    <div className='flex text-[#fefefe]/100'>
+                    <div className='flex lg:flex-row flex-col md:gap-4 gap-6 text-[#fefefe]/100'>
                         <div className='px-[12px]'>
-                            <h3 className='mb-[20px] font-[family-name:var(--font-poppins)] md:text-[18px] text-[15px] text-[#fefefe]/60'>
+                            <h3 className='mb-[20px] font-[family-name:var(--font-poppins)] md:text-[18px] text-[15px] text-[#fefefe]/80'>
                                 On Awards
                             </h3>
-                            <h2 className='font-[family-name:var(--font-poppins)] md:text-[50px] text-[28px] font-bold md:max-w-[450px] max-w-[500px]'>
+                            <h2 className='font-[family-name:var(--font-poppins)] md:text-[42px] text-[28px] font-bold md:max-w-[450px] max-w-[500px]'>
                                 We get multiple awards
                             </h2>
                         </div>
 
-                        <div className='md:ml-[110px] md:px-[12px]'>
-                            {/* <div className="mx-auto max-w-xs">
-                            <Carousel setApi={setApi} className="w-full max-w-xs">
-                                <CarouselContent>
-                                    {Array.from({ length: 5 }).map((_, index) => (
-                                        <CarouselItem key={index}>
-                                            <Card>
-                                                <CardContent className="flex aspect-video items-center justify-center p-6">
-                                                    <div className='w-full'>
-                                                        Hello
-
-                                                    </div>
-                                                </CardContent>
-                                            </Card>
-                                        </CarouselItem>
-                                    ))}
-                                </CarouselContent>
-                                <CarouselPrevious />
-                                <CarouselNext />
-                            </Carousel>
-                            <div className="mt-4 text-center text-sm text-muted-foreground">
-                               
+                        <div className='md:ml-[95px] md:px-[12px] '>
+                            <div className="mx-auto max-w-xs">
+                                <Carousel setApi={setApi} className="w-full max-w-xs">
+                                    <CarouselContent  >
+                                        {Array.from({ length: 5 }).map((_, index) => (
+                                            <CarouselItem key={index} className='max-w-[500px]'>
+                                                <div className=''>
+                                                <Card>
+                                                    <CardContent className="flex aspect-video items-center justify-between ">
+                                                        <div className='flex flex-col'>
+                                                            <div>
+                                                                <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
+                                                                    2020
+                                                                </h3>
+                                                                <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>New technology innovation</h2>
+                                                                <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Honorable mention</p>
+                                                                <p className='text-[#b1b1b1] text-[16px]'>Desktop exelence</p>
+                                                            </div>
+                                                            <div>
+                                                                <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
+                                                                    2019
+                                                                </h3>
+                                                                <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>Google awards</h2>
+                                                                <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Website of the day</p>
+                                                                <p className='text-[#b1b1b1] text-[16px]'>Mobile exelence</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className='flex flex-col'>
+                                                            <div>
+                                                                <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
+                                                                    2022
+                                                                </h3>
+                                                                <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>UI/UX design of the month</h2>
+                                                                <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Website of the day</p>
+                                                                <p className='text-[#b1b1b1] text-[16px]'>Mobile exelence</p>
+                                                            </div>
+                                                            <div>
+                                                                <h3 className='mb-[15px] text-[26px] text-[#ff4a17] font-bold'>
+                                                                    2021
+                                                                </h3>
+                                                                <h2 className='mb-[10px] text-[20px] text-[#fefefe]'>CSS awards design</h2>
+                                                                <p className='mb-[7px] text-[#b1b1b1] text-[16px]'>Honorable mention</p>
+                                                                <p className='text-[#b1b1b1] text-[16px]'>Desktop exelence</p>
+                                                            </div>
+                                                        </div>
+                                                    </CardContent>
+                                                </Card>
+                                                </div>
+                                            </CarouselItem>
+                                        ))}
+                                    </CarouselContent>
+                                    <CarouselPrevious />
+                                    <CarouselNext />
+                                </Carousel>
+                                {/* <div className="mt-4 text-center text-sm text-muted-foreground">
+                                    Slide {current} of {count}
+                                  </div> */}
                             </div>
-                        </div> */}
-                        {/* </div>
+                        </div>
                     </div>
                 </div>
 
 
-                <div className='h-[130px]'></div>
+                {/* <div className='h-[130px]'></div>
 
                 <div className='container'>
                     <h2 className='font-[family-name:var(--font-poppins)] md:text-[42px] text-[30px] md:max-w-[1300px] font-bold  max-w-[400px] text-[#fefefe]/100 text-center  '>
@@ -241,26 +317,26 @@ const InfoFold = () => {
                     </h2>
                 </div>
 
-                <div className='h-[70px]'></div>
+                <div className='h-[70px]'></div> */}
 
-            </div> */} 
+            </div>
 
             <div className='h-[130px]'></div>
 
-                <div className='container'>
-                    <h2 className='font-[family-name:var(--font-poppins)] lg:text-[42px] text-[36px]  font-bold text-[#fefefe]/100 text-center '>
-                        Our agile process is ability to adapt and respond to change.
-                        Agile organizations view change as an opportunity, not a threat.
-                    </h2>
-                </div>
+            <div className='container'>
+                <h2 className='font-[family-name:var(--font-poppins)] lg:text-[42px] text-[36px]  font-bold text-[#fefefe]/100 text-center '>
+                    Our agile process is ability to adapt and respond to change.
+                    Agile organizations view change as an opportunity, not a threat.
+                </h2>
+            </div>
 
-         <div className='h-[100px]'></div>
+            <div className='h-[100px]'></div>
 
         </div>
 
-        
 
-        
+
+
 
 
     )

@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className="w-full bg-[url(/hero_bg.jpeg)] text-[#fefefe]/110  bg-cover">
 
             <div className='container'>
-                <div className="pt-[220px] pb-[170px] min-h-[960px] ">
+                <div className="pt-[220px] pb-[170px] min-h-[880px] ">
                     <div className='md:max-w-[800px] max-w-[370px] '>
                         <h1 className="text-[#fefefe]/130 lg:text-[100px] md:text-[56px] lg:max-w-[750px] md:max-w-[450px] text-[42px] font-bold font-[family-name:var(--font-poppins)] mb-[60px]  leading-[1.25em]">
                             Creativity In Our Blood Line

@@ -24,6 +24,7 @@ export default function SlideStatus() {
   }, [api]);
 
   return (
+    
     <div className="mx-auto max-w-xs">
       <Carousel setApi={setApi} className="w-full max-w-xs">
         <CarouselContent>

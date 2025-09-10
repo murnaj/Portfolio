@@ -158,7 +158,7 @@ const Footer = () => {
                             <p className='text-[16px] font-normal mt-[30px] max-w-[250px]'>Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium.</p>
                         </div>
                         <div className='flex justify-start space-x-3 mt-[25px] -mr-[7px] -mb-[7px]'>
-                            <div className="h-9 w-9 rounded-full border-1 border-white  text-white flex items-center justify-center">
+                            <div className="hover:text-orange-600 h-9 w-9 rounded-full border-1 border-white  text-white flex items-center justify-center">
                                 <a href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         aria-hidden="true"
@@ -171,7 +171,7 @@ const Footer = () => {
                                         /></svg>
                                 </a>
                             </div>
-                            <div className='h-9 w-9 rounded-full border-1 border-white  text-white flex items-center justify-center'>
+                            <div className='hover:text-orange-600 h-9 w-9 rounded-full border-1 border-white  text-white flex items-center justify-center'>
                                 <a href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         aria-hidden="true"
@@ -186,7 +186,7 @@ const Footer = () => {
                                     </svg>
                                 </a>
                             </div>
-                            <div className='h-9 w-9 rounded-full border-1 border-white  text-white flex items-center justify-center' >
+                            <div className='hover:text-orange-600 h-9 w-9 rounded-full border-1 border-white  text-white flex items-center justify-center' >
                                 <a href="#">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +201,7 @@ const Footer = () => {
                                         /></svg>
                                 </a>
                             </div>
-                            <div className='h-9 w-9 rounded-full border-1 border-white  text-white flex items-center justify-center'>
+                            <div className='hover:text-orange-600 h-9 w-9 rounded-full border-1 border-white  text-white flex items-center justify-center'>
                                 <a href="#">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
